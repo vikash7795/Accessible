@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "inspire.example.com.demo1"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+       /* multiDexEnabled true*/
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro','-keep public class MyClass'
+
+        }
+    }
+
+}
+repositories {
+    mavenCentral()
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    /*    compile 'com.roughike:bottom-bar:1.3.9'*/
+    /*    compile 'com.google.android.gms:play-services:9.2.0'*/
+    /*compile 'com.google.android.gms:play-services:9.2.0'*/
+  /*  compile 'com.android.support:multidex:1.0.0'*/
+    compile 'com.android.support:palette-v7:23.4.0'
+    compile 'com.github.paolorotolo:appintro:3.4.0'
+    compile 'com.gordonwong:material-sheet-fab:1.2.1'
+
+    compile 'com.github.florent37:materialtextfield:1.0.5'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.aurelhubert:ahbottomnavigation:1.3.0'
+    compile 'de.hdodenhof:circleimageview:1.3.0'
+    compile 'com.android.support:cardview-v7:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    /*compile 'com.google.android.gms:play-services:8.3.0'*/
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+
+}

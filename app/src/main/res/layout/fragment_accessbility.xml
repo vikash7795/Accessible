@@ -1,0 +1,218 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:paddingTop="30dp"
+    android:paddingBottom="24dp" tools:context=".MainActivity"
+    android:id="@+id/rl1">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/blackwhite"
+        android:textColor="#000"
+
+        android:textSize="18sp"
+        android:id="@+id/textView" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch1"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginLeft="140dp"
+        android:layout_marginStart="140dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_below="@+id/switch1"
+        android:layout_marginTop="30dp"
+        android:id="@+id/text1"
+        android:text="Contrast Dark"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text5"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/text1"
+        android:text="Increases the darkness of content"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/check1"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/text1"
+        android:layout_marginLeft="170dp"
+        android:layout_marginStart="170dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contrast White"
+        android:id="@+id/text4"
+        android:layout_below="@+id/text5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+        android:textColor="#000"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/check2"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/text4"
+        android:layout_below="@+id/check1"
+        android:layout_marginLeft="162dp"
+        android:layout_marginStart="162dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text6"
+        android:layout_marginTop="2dp"
+        android:text="Decreases the darkness of content"
+        android:layout_below="@+id/text4"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Font Size"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:id="@+id/text7"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/text6"/>
+
+
+
+    <RadioGroup android:layout_width="wrap_content"
+        android:layout_gravity="left|center_vertical" android:layout_height="wrap_content"
+        android:layout_weight="1" android:id="@+id/rgOpinion"
+        android:orientation="horizontal"
+        android:layout_below="@+id/text7">
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Small"
+            android:layout_marginLeft="5dp"
+
+            android:layout_marginTop="5dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="7dp"
+            android:textSize="20sp"/>
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Large"
+            android:layout_marginLeft="15dp"
+            android:textSize="27sp"
+            android:layout_marginTop="9dp" />
+
+
+
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Theme Colour"
+        android:textColor="#000"
+        android:id="@+id/text9"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/rgOpinion"
+
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/text9"
+        android:id="@+id/img1"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/red1"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/text9"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/img1"
+        android:src="@drawable/green"
+        android:id="@+id/img2"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/text9"
+        android:layout_toRightOf="@+id/img2"
+        android:src="@drawable/blue"
+        android:id="@+id/img3"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/img1"
+        android:id="@+id/img4"
+        android:src="@drawable/yellow"/>
+
+
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/img5"
+        android:layout_below="@+id/img2"
+        android:layout_toRightOf="@+id/img4"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/pink"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/img3"
+        android:layout_toRightOf="@+id/img5"
+        android:id="@+id/img6"
+        android:src="@drawable/orange"/>
+
+
+</RelativeLayout>
+
+</ScrollView>

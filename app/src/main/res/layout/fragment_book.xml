@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Now"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="#64B5F6"
+        />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#000"
+        android:backgroundTint="#000">
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textColor="#000"
+            android:backgroundTint="#000"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#000"
+        android:backgroundTint="#000">
+
+
+        <EditText
+            android:id="@+id/edittextmob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone no."
+            android:inputType="number"
+            android:textColor="#000"
+            android:backgroundTint="#000"
+            />
+
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#000"
+        android:backgroundTint="#000">
+
+
+        <EditText
+            android:id="@+id/editTextAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColor="#000"
+            android:backgroundTint="#000"
+            />
+
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <!--     <TableRow
+             android:id="@+id/tableRow1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" >
+
+             <TextView
+                 android:id="@+id/textViewGender"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Gender"
+                 android:textSize="19dp"
+
+                 android:layout_marginTop="20dp"
+                 android:textColor="#fff"/>
+
+             <RadioGroup
+                 android:id="@+id/answer1"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="0.4"
+                 android:layout_marginTop="20dp"
+                 android:buttonTint="#fff">
+
+                 <RadioButton
+                     android:id="@+id/answer1A"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:buttonTint="#fff"
+                     android:text="Male"
+                     android:textColor="#fff" />
+
+                 <RadioButton
+                     android:id="@+id/answer1B"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Female"
+                     android:textColor="#fff"
+                     android:buttonTint="#fff"/>
+
+             </RadioGroup>
+         </TableRow>-->
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#000"
+        android:backgroundTint="#000">
+
+        <EditText
+            android:id="@+id/editSeats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="No.of Seats"
+            android:inputType="number"
+            android:backgroundTint="#000"
+            android:textColor="#000"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#000"
+        android:backgroundTint="#000">
+
+        <EditText
+            android:id="@+id/editDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date"
+            android:ems="10"
+            android:inputType="date"
+            android:textColor="#000"
+            android:backgroundTint="#000"
+            android:focusableInTouchMode="false"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <!-- <TextView
+         android:id="@+id/lblTime"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Time"
+         android:textAppearance="?android:attr/textAppearanceLarge" />
+
+     <TextView
+         android:id="@+id/tvTime"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text=""
+         android:textAppearance="?android:attr/textAppearanceLarge" />
+
+     <TimePicker
+         android:id="@+id/timePicker1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />-->
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#000"
+        android:backgroundTint="#000">
+
+        <EditText
+            android:id="@+id/editTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Time"
+            android:ems="10"
+            android:focusableInTouchMode="false"
+            android:textColor="#000"
+            android:backgroundTint="#000"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <!--   <android.support.design.widget.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:textColorHint="#fff"
+           android:backgroundTint="#fff">
+
+           <EditText
+               android:id="@+id/editTextVehicleNumber"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Vehicle No."
+               android:textColor="#fff"
+               android:inputType="number"
+               android:backgroundTint="#fff"/>
+       </android.support.design.widget.TextInputLayout>-->
+
+
+
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="190dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Submit"
+
+        android:textColor="#000"
+        android:background="#64B5F6"/>
+</LinearLayout>

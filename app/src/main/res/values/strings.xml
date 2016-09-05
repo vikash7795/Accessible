@@ -1,0 +1,263 @@
+<resources>
+
+    <string name="skip">skip</string>
+    <string name="app_name">DiscoverAxs</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="navigation_item_1">Home</string>
+    <string name="navigation_item_2">Events</string>
+    <string name="starred_string">Locations</string>
+    <string name="inbox_string">Home</string>
+
+    <string name="draft_string">Invite</string>
+    <string name="subheader">Subheader</string>
+    <string name="trash_string">About Us</string>
+
+    <string name="spam_string">Settings</string>
+    <string name="closeDrawer">Navigation View</string>
+    <string name="openDrawer">Navigation View Closed</string>
+    <string name="title_activity_pizza_detail">Deatils</string>
+    <string name="maxdetail"><p>This is max hospital in greater noida.</p><br>max</br></string>
+
+    <string name="title_activity_second_hospital">SecondHospital</string>
+    <string name="spinner_title"><b>Select</b></string>
+    <string-array name="needs">
+        <item>Skin</item>
+        <item>Mobility</item>
+        <item>Vision</item>
+        <item>Hearing</item>
+        <item>Speech</item>
+        <item>Intellectual</item>
+        <item>Others</item>
+    </string-array>
+
+
+    <string name="cheese_ipsum">"The  is accessible to anyone. \n"
+    "It mainly provides accessiblity to wheelchair and physically disabled people"
+    </string>
+    <string name="advanced_search">Advanced Search</string>
+    <string name="accessibility">Accessibility</string>
+    <string name="add_location">Add Location</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="action_search">Search</string>
+    <string name="search">Search</string>
+
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="Username">Name</string>
+    <string name="create_account">Continue</string>
+    <string name="already_a_member_login">Already a member? Login</string>
+    <string name="share">Share</string>
+    <string name="review">"This restaurant is very true to its theme..The ambience is very cozy and staff was very friendly... A place I'll definitely be back too for a nice warm chat With friends....\n"
+        "                                                             --Palak"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="complete_profile">My Profile</string>
+    <string name="special_needs">Special needs:</string>
+    <string name="Home">Home</string>
+    <string name="tab_0">Home</string>
+    <string name="tab_1">Video</string>
+    <string name="tab_2">Virtual Tour</string>
+    <string name="tab_3">Chat</string>
+    <string name="tab_4">Book</string>
+
+    <string name="reviews">Reviews</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="name_of_location">Name of Location</string>
+    <string name="where_do_you_live">Where Do You Live?</string>
+    <string-array name="font">
+        <item>Small</item>
+        <item>Normal</item>
+        <item>Large</item>
+    </string-array>
+
+    <string name="thirdcard">
+            " 1, Ranjith Road,\n Near Anna University,\n Kotturpuram, Chennai\n"
+    </string>
+    <string name="v3scard">
+        "V3S Mall, District Centre, Vikas Marg, Laxmi Nagar, New Delhi \nDelhi 110092"\nIndia \n"
+    </string>
+    <string name="pacificcard1">
+        "Nafjafgarh Road Mor, Block 6\nSubhash Nagar, New Delhi, 110018"\nIndia\n"
+    </string>
+
+    <string name="blackwhite">"Black and White"</string>
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Fullname</string>
+    <string name="sign_in">Sign In</string>
+    <string name="forgot"> <u> Forgot Password / Sign Up </u> </string>
+    <string name="location">Add Location Type</string>
+
+    <string name="country">Select your country</string>
+    <string name="find_accessible_places_near_by_you">Find accessible places near by you</string>
+    <string name="world_is_accessible">World is Accessible to All</string>
+    <string name="get_directions">Get Directions</string>
+    <string name="address_optional">Address(optional)</string>
+    <string name="submit">Submit</string>
+    <string name="urban">Urban</string>
+    <string name="rural">Rural</string>
+
+    <string-array name="category_array">
+        <item><b>Select a Category</b></item>
+        <item>Education</item>
+        <item>Shopping</item>
+        <item>Banking Services</item>
+        <item>Food</item>
+        <item>Health</item>
+        <item>Accessible Washrooms</item>
+        <item>Entertainment</item>
+        <item>Disability Events</item>
+        <item>Public Transport</item>
+        <item>Accessible Tours</item>
+        <item>Accessible cabs</item>
+        <item>Accomodation</item>
+
+
+    </string-array>
+
+    <string-array name="country">
+        <item><b>Select a Country</b></item>
+        <item>Australia</item>
+        <item>India</item>
+        <item>New Zealand</item>
+        <item>UK</item>
+        <item>USA</item>
+
+    </string-array>
+
+    <string-array name="india">
+        <item><b>Select a State</b></item>
+        <item>Andhra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chattisgarh</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jammu and Kashmir</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Odisha</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Telangana</item>
+        <item>Tripura</item>
+        <item>Uttar Pradesh</item>
+        <item>Uttarakhand</item>
+        <item>West Bengal</item>
+
+
+    </string-array>
+
+    <string name="category"><b>Select a category</b></string>
+    <string name="State">Select a State</string>
+    <string name="City">Select a City</string>
+    <string name="book_it">Book it</string>
+    <string name="like_it">Like it?</string>
+
+    <string-array name="punjab">
+        <item><b>Select a City</b></item>
+        <item>Amritsar</item>
+        <item>Firozpur</item>
+        <item>Hoshiarpur</item>
+        <item>Jalandhar</item>
+        <item>Ludhiana</item>
+        <item>Pathankot</item>
+
+
+    </string-array>
+    <string-array name="distance_array">
+        <item><b>Select Distance (in Kms)</b></item>
+        <item>Within 5 Km </item>
+        <item>5-10</item>
+        <item>10-15</item>
+        <item>15-20</item>
+        <item>20-25</item>
+        <item>25-30</item>
+    </string-array>
+
+
+    <string-array name="default_state">
+        <item><b>Select a State</b></item>
+    </string-array>
+
+    <string-array name="default_city">
+        <item><b>Select a City</b></item>
+    </string-array>
+    <string name="title_activity_parking_image_adapter">ParkingImageAdapter</string>
+    <string name="information">Information</string>
+    <string name="thirdhos">ThirdHospital</string>
+    <string name="select">select</string>
+    <string name="select_a_place">Select A Place</string>
+    <string name="parking_3_star">Parking 3 star</string>
+    <string name="braille">Braille</string>
+    <string name="select_categories">Select Categories</string>
+    <string name="login">Login</string>
+    <string name="accessibilty">Accessibilty</string>
+    <string name="see_details">See Details</string>
+    <string name="explain">Explanation</string>
+    <string name="upload_a_video">Upload A Picture /Video</string>
+    <string name="filter">Filter</string>
+    <string name="new_user_sign_up">New User/Sign up</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="v3s">"V3S Mall, located in Laxmi Nagar, is a one stop shopping and entertainment destination. The mall is aesthetically designed and is spread over 5 acres offering a great shopping experience.There are 5 levels in the mall including the one level for parking. It has a multiplex which is managed by Fun Cinemas. Food Court of this mall serves all types of delicious cuisines and has oulets of KFC, Mc Donalds and more.
+ \n""Opening timings for V3S Mall\n""All days of the week \n""10:00 AM - 11:00 PM"
+    </string>
+    <string name="mcdonald">"Kalakkal Cafe is not just any other cafe but has been designed in such a manner to suit the needs of the people of disability.
+       \n""    Located in Chennai, this cafe has menu cards in Braille so that people with visual impairment can easily choose from the variety of dishes it has to offer. Also,colours, fonts and pictures on the menu have been designed in a manner so that people with low vision can read it without difficulty.
+       \n""    Tactile walls are also present to make walking easier for people with disability more convenient. Apart from this, it is wheelchair accessible through ramps for wheelchair users. To support dining, they have eating aids as well.
+        ""\nThis cafe includes:\n"
+"\n 1. Menu cards in Braille"
+"\n 2. Tactile walls,"
+"\n 3. Ramps for wheelchairs"
+"\n 4. Accessible bathrooms"
+"\n 5. Eating aids"
+
+
+    </string>
+    <string name="pacific">"Shopping never goes out of fashion. At Pacific it is a shopping, entertainment and leisure extravaganza 365 days a year! With over 130 international and national brands to choose from, Pacific is the new landmark of India's shopping capital.
+"</string>
+    <string name="small">Small</string>
+    <string name="medium">Medium</string>
+    <string name="large">Large</string>
+    <string name="accessible_for_all_special_needs">Accessible For All Special Needs</string>
+    <string name="explore">Explore</string>
+    <string name="transgender">Third Gender</string>
+
+    <string name="filter1">Filter</string>
+    <string name="devices_used">Devices Used</string>
+    <string name="favourites">Favourites</string>
+    <string name="phone">Phone</string>
+    <string name="contact_details">Contact Details</string>
+    <string name="details">Details</string>
+    <string name="select_accessibility">Select Accessibility</string>
+
+    <string-array name="large_text">vikash sinha</string-array>
+</resources>

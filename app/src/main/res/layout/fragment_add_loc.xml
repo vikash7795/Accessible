@@ -1,0 +1,306 @@
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="30dp"
+        android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="Name Of Location"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location Type"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/text1"
+            android:layout_below="@+id/editText1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"
+            android:textColor="#000"
+            />
+
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#000"
+            android:entries="@array/category_array"
+            android:id="@+id/spinner1"
+            android:prompt="@string/category"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+
+            android:layout_below="@+id/text1"
+            android:layout_toStartOf="@+id/spinner4"
+            android:layout_toLeftOf="@+id/spinner4"
+            android:spinnerMode="dialog"/>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Select Accessibility"
+            android:id="@+id/button5"
+            android:layout_below="@+id/spinner1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+
+
+            android:textColor="#fff"
+            android:background="#90caf9"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@+id/button5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/view12"
+            android:layout_marginTop="25dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Address"
+
+            android:id="@+id/text2"
+            android:layout_below="@+id/view12"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText2"
+            android:hint="Street Number,Name"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/text2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText4"
+            android:hint="Locality"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/editText2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText3"
+            android:hint="Pin Code"
+            android:inputType="number"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/editText4"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Location"
+            android:id="@+id/text3"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/editText3"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner2"
+            android:layout_below="@+id/text3"
+            android:entries="@array/country"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:spinnerMode="dialog"
+            android:layout_marginLeft="10dp"
+            android:prompt="@string/country"
+            />
+
+
+        <Spinner
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner3"
+            android:layout_below="@+id/spinner2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:entries="@array/india"
+            android:spinnerMode="dialog"
+            android:prompt="@string/State"/>
+
+        <Spinner
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner4"
+            android:layout_alignTop="@+id/spinner3"
+            android:entries="@array/punjab"
+            android:layout_alignRight="@+id/editText2"
+            android:layout_alignEnd="@+id/editText2"
+            android:spinnerMode="dialog"
+            android:prompt="@string/City"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="Pictures"
+            android:textColor="#000"
+            android:id="@+id/text4"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/spinner3"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Upload  Picture"
+            android:id="@+id/button4"
+            android:layout_below="@+id/text4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:foregroundGravity="center"
+
+            android:textColor="#fff"
+            android:background="#90caf9"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Upload  Video"
+            android:id="@+id/button6"
+            android:layout_below="@+id/text4"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="10dp"
+            android:foregroundGravity="center"
+
+            android:textColor="#fff"
+            android:background="#90caf9"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@+id/button4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/view"
+            android:layout_marginTop="25dp"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text6"
+            android:layout_below="@+id/view"
+            android:layout_marginTop="15dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:text="Reviews"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit1"
+            android:layout_below="@+id/text6"
+            android:layout_marginTop="10dp"
+            android:inputType="textMultiLine"
+            android:gravity="left|top"
+            android:layout_marginLeft="10dp"
+
+            android:lines="5"
+            android:hint="Write your reviews"
+
+            >
+
+
+        </EditText>
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Your Ratings"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:id="@+id/text5"
+            android:textColor="#000"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/edit1"/>
+
+
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar1"
+            android:layout_below="@+id/text5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/button3"
+            android:layout_below="@+id/ratingBar1"
+            android:layout_alignRight="@+id/button2"
+            android:layout_alignEnd="@+id/button2"
+            android:layout_marginTop="20dp"
+            android:textColor="#fff"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="#2196f3" />
+
+
+
+
+    </RelativeLayout>
+ </ScrollView>

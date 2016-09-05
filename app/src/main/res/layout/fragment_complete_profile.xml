@@ -1,0 +1,285 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scrollbars="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:paddingTop="0dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="24dp"
+                android:src="@drawable/person"
+                android:layout_marginTop="40dp"
+                android:id="@+id/name"
+               android:backgroundTint="#1976d2"
+                android:layout_marginRight="10dp"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#000"
+                android:backgroundTint="#000">
+
+                <EditText
+                    android:id="@+id/editTextName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:shadowColor="#0000ff"
+                    android:textColor="#000"
+                    android:backgroundTint="#000"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/envelope"
+
+                android:layout_marginTop="40dp"
+                android:id="@+id/email"
+                android:layout_marginRight="10dp"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#000"
+                android:backgroundTint="#000">
+
+                <EditText
+                    android:id="@+id/editTextEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:shadowColor="#0000ff"
+                    android:textColor="#000"
+                    android:backgroundTint="#000"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/mobile"
+
+                android:layout_marginTop="40dp"
+                android:id="@+id/mobile"
+                android:layout_marginRight="10dp"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#000"
+                android:backgroundTint="#000">
+
+                <EditText
+                    android:id="@+id/editTextMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile"
+                    android:shadowColor="#0000ff"
+                    android:textColor="#000"
+                    android:backgroundTint="#000"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="24dp"
+                android:src="@drawable/building"
+
+                android:layout_marginTop="40dp"
+                android:id="@+id/city"
+                android:layout_marginRight="10dp"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#000"
+                android:backgroundTint="#000">
+
+                <EditText
+                    android:id="@+id/editTextCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="City"
+                    android:shadowColor="#0000ff"
+                    android:textColor="#000"
+                    android:backgroundTint="#000"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+        </LinearLayout>
+
+        <TextView
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:text="@string/special_needs"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000"
+
+
+            />
+
+
+
+
+        <!-- Spinner Element -->
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:prompt="@string/spinner_title"
+            android:entries="@array/needs"
+            android:spinnerMode="dialog"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="-90dp"
+            />
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/choose"
+            android:text="@string/devices_used"
+            android:layout_marginLeft="40dp"
+            android:textColor="#fff"
+            android:background="#90caf9"
+            android:layout_below="@+id/devicesIUse"
+            android:layout_marginRight="25dp"
+
+            android:layout_marginTop="20dp"
+           android:layout_gravity="left" />
+
+        <!--   <android.support.design.widget.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:textColorHint="#fff"
+               android:backgroundTint="#fff">
+
+               <EditText
+                   android:id="@+id/editTextVehicleNumber"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="Vehicle No."
+                   android:textColor="#fff"
+                   android:inputType="number"
+                   android:backgroundTint="#fff"/>
+           </android.support.design.widget.TextInputLayout>-->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dip"
+            android:text="@string/where_do_you_live"
+            android:textSize="17sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000"
+            />
+
+        <!--    <RadioGroup android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal" android:layout_height="wrap_content"
+                android:layout_weight="1" android:id="@+id/rgOpinion"
+
+                android:layout_marginLeft="10dp">
+                <RadioButton android:layout_width="wrap_content"
+                    android:id="@+id/radio0" android:layout_height="wrap_content"
+                    android:textColorHint="#000"
+                   android:textColor="#000" android:text="Excellent"/>
+                <RadioButton android:id="@+id/radioButton1"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"    android:textColorHint="#000"
+                    android:textColor="#000"  android:text="Good"/>
+            </RadioGroup>
+    -->  <RadioGroup android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal" android:layout_height="wrap_content"
+        android:layout_weight="1" android:id="@+id/rgOpinion"
+        android:orientation="horizontal">
+        <RadioButton android:layout_width="wrap_content"
+            android:textColor="#000"
+            android:buttonTint="#000"
+            android:layout_gravity="left"
+            android:layout_weight="0.5"
+            android:gravity="left"
+            android:paddingRight="100dp"
+            android:id="@+id/radio0" android:layout_height="wrap_content"
+            android:text="@string/urban"
+            android:layout_marginBottom="10dp"/>
+        <RadioButton android:id="@+id/radioButton1"
+            android:textColor="#000"
+            android:buttonTint="#000"
+            android:layout_gravity="right"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/rural"/>
+    </RadioGroup>
+
+
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_signup"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="25dp"
+            android:textColor="#fff"
+            android:background="#1976d2"
+            android:text="@string/submit"/>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

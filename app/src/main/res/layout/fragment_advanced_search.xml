@@ -1,0 +1,277 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:paddingLeft="24dp"
+        android:padding="18dp"
+        tools:context=".MainActivity"
+        android:id="@+id/rl1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Select Categories"
+            android:id="@+id/text1"
+            android:textSize="18sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:text="Select  Accessibility"
+            android:id="@+id/text4"
+            android:textSize="18sp"
+            android:layout_below="@+id/spinner1"
+            android:layout_marginTop="15dp"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/check1"
+            android:text="Braille "
+            android:layout_below="@+id/text4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/check2"
+            android:text="Sign Language "
+            android:layout_alignTop="@+id/check1"
+            android:layout_alignLeft="@+id/auto2"
+            android:layout_alignStart="@+id/auto2" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/check3"
+            android:text="Lifts Available "
+            android:layout_below="@+id/check2"
+            android:layout_alignLeft="@+id/check2"
+            android:layout_alignStart="@+id/check2" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/check4"
+            android:text="Wheelchair Friendly"
+            android:layout_below="@+id/check2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/check5"
+            android:text="Disabled Parking"
+            android:layout_below="@+id/check4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/check6"
+            android:text="Large Print"
+            android:layout_alignTop="@+id/check5"
+            android:layout_alignLeft="@+id/check3"
+            android:layout_alignStart="@+id/check3" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/check7"
+            android:text="Step Free"
+            android:layout_below="@+id/check6"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/check8"
+            android:text="Assistance"
+            android:layout_alignTop="@+id/check7"
+            android:layout_alignLeft="@+id/check6"
+            android:layout_alignStart="@+id/check6" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/check9"
+            android:text="Gluten Free Food"
+            android:layout_below="@+id/check8"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/check10"
+            android:text="Escalators"
+            android:layout_alignTop="@+id/check9"
+            android:layout_alignLeft="@+id/check8"
+            android:layout_alignStart="@+id/check8" />
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Location"
+            android:id="@+id/text2"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/check9"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+
+
+        <AutoCompleteTextView
+            android:id="@+id/auto1"
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Country"
+            android:text=""
+            android:textSize="18sp"
+            android:layout_below="@+id/text2"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@+id/text2"
+            android:layout_alignStart="@+id/text2">
+
+
+        </AutoCompleteTextView>
+
+        <AutoCompleteTextView
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/auto2"
+            android:layout_alignBaseline="@+id/auto1"
+            android:layout_alignBottom="@+id/auto1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="18sp"
+            android:hint="State">
+
+            <requestFocus/>
+        </AutoCompleteTextView>
+
+        <AutoCompleteTextView
+            android:id="@+id/auto3"
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text=""
+            android:textSize="18sp"
+            android:layout_below="@+id/auto1"
+            android:layout_alignLeft="@+id/auto1"
+            android:layout_alignStart="@+id/auto1"
+            android:hint="City">
+
+            <requestFocus />
+        </AutoCompleteTextView>
+
+        <AutoCompleteTextView
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:ems="10"
+            android:id="@+id/auto4"
+            android:layout_below="@+id/auto2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="18sp"
+            android:hint="Locality">
+
+            <requestFocus/>
+        </AutoCompleteTextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distance"
+            android:id="@+id/text3"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"
+
+            android:layout_below="@+id/auto3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner2"
+            android:layout_below="@+id/text3"
+
+            android:entries="@array/distance_array"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@+id/auto3"
+            android:layout_alignStart="@+id/auto3" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner1"
+            android:layout_below="@+id/text1"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@+id/text3"
+            android:layout_alignStart="@+id/text3"
+
+            android:entries="@array/category_array"
+            android:spinnerMode="dialog"
+
+            />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button1"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="Search"
+            android:layout_marginTop="20dp"
+            android:textColor="#fff"
+            android:layout_below="@+id/spinner2"
+            android:layout_alignLeft="@+id/spinner2"
+            android:layout_alignStart="@+id/spinner2"
+            android:background="#2196f3"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+
+
+            />
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

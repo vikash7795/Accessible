@@ -1,0 +1,242 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <EditText
+            android:id="@+id/messageEdit"
+            android:paddingBottom="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/chatSendButton"
+            android:autoText="true"
+            android:hint="type message" />
+        <ImageView
+            android:id="@+id/chatSendButton"
+            android:paddingBottom="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/forward"
+            android:layout_alignParentRight="true"/>
+        <!--
+                <Button
+                    android:id="@+id/chatSendButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/background_floating_material_dark"
+                    android:text="Send MSG"
+                    android:textColor="@color/background_material_light"/>-->
+
+        <!-- <ListView
+             android:id="@+id/messagesContainer"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_alignParentLeft="false"
+             android:layout_alignParentTop="false"
+             android:layout_marginBottom="20dp"
+             android:layout_above="@+id/messageEdit"
+             android:layout_below="@+id/meLbl"
+             android:layout_marginTop="10dp"
+             android:listSelector="@android:color/transparent"
+             android:transcriptMode="alwaysScroll"
+             android:divider="@null" />
+ -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Hi,How can I help u?"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_marginBottom="20dp"
+
+            android:layout_marginTop="30dp"
+            android:background="#2196F3"
+            android:id="@+id/textView" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="I need a list of wheelchair friendly restaurants"
+            android:textColor="#fff"
+            android:padding="5dp"
+            android:layout_marginLeft="60dp"
+
+
+            android:id="@+id/text2"
+            android:background="#26C6DA"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Definitely ,We would love to help you out... Please specify your location"
+            android:textColor="#fff"
+            android:padding="5dp"
+
+            android:layout_marginRight="55dp"
+            android:foregroundGravity="left"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="false"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/text4"
+            android:layout_marginTop="10dp"
+            android:background="#2196F3"
+            android:layout_below="@+id/text2"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Delhi-NCR"
+            android:textColor="#fff"
+            android:padding="5dp"
+            android:gravity="center"
+            android:id="@+id/text3"
+            android:background="#26C6DA"
+            android:layout_below="@+id/text4"
+            android:layout_alignRight="@+id/text2"
+            android:layout_alignEnd="@+id/text2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="List Of restaurants in Delhi-NCR."
+            android:textColor="#fff"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginBottom="10dp"
+            android:foregroundGravity="left"
+            android:gravity="right"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="false"
+            android:id="@+id/text5"
+            android:background="#2196F3"
+            android:layout_below="@+id/text3"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text5"
+            android:orientation="vertical"
+            android:background="#2196F3">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="1.Kalakkal Cafe"
+                android:textColor="#fff"
+                android:padding="1dp"
+
+                android:layout_marginRight="50dp"
+                android:foregroundGravity="left"
+                android:gravity="right"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="false"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/text7"
+
+                android:background="#2196F3"
+                android:layout_below="@+id/text5"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="2.Trident "
+                android:textColor="#fff"
+                android:padding="1dp"
+
+                android:layout_marginRight="50dp"
+                android:foregroundGravity="left"
+                android:gravity="right"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="false"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/text8"
+                android:layout_marginTop="5dp"
+                android:background="#2196F3"
+                android:layout_below="@+id/text7"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="3.Ping Café Orient  "
+                android:textColor="#fff"
+                android:padding="1dp"
+
+                android:layout_marginRight="50dp"
+                android:foregroundGravity="left"
+                android:gravity="right"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="false"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/text9"
+                android:layout_marginTop="5dp"
+                android:background="#2196F3"
+                android:layout_below="@+id/text8"
+                />
+        </LinearLayout>
+        <!--  <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="20sp"
+              android:text="Thanks for the appreciation "
+              android:textColor="#fff"
+              android:padding="5dp"
+              android:gravity="center"
+              android:id="@+id/text6"
+              android:background="#26C6DA"
+              android:layout_below="@+id/text5"
+              android:layout_alignRight="@+id/messageEdit"
+              android:layout_alignEnd="@+id/messageEdit" />-->
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_above="@+id/messageEdit"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/view"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:id="@+id/meLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:text="DiscoverAxs"
+            android:singleLine="false"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/friendLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="User"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+</LinearLayout>

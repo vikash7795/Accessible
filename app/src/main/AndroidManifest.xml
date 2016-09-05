@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="inspire.example.com.demo1">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@drawable/billionables"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MyIntro" />
+        <activity android:name=".MainAppActivity" />
+        <activity android:name=".ExplainIconActivity" />
+        <activity android:name=".FirstHospital" />
+        <activity android:name=".CardviewDetail">
+
+            <!--
+            android:label="@string/title_activity_pizza_detail"
+            android:parentActivityName=".MainAppActivity"
+            -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainAppActivity" />
+        </activity>
+        <activity
+            android:name=".SecondHospital"
+            android:label="@string/title_activity_second_hospital"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".V3SShopping"
+            android:label="@string/thirdhos"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".SignUpActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_sign_up"
+            android:theme="@style/FullscreenTheme" />
+        <activity android:name=".ShoppingActivity" />
+        <activity android:name=".FourthHospital" />
+        <activity android:name=".FoodActivity" />
+        <activity android:name=".McdonaldActivity" />
+        <activity android:name=".EntertainmentActivity" />
+        <activity android:name=".PacificActivity" />
+        <activity android:name=".SearchPlace" />
+        <activity android:name=".IndianDining"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <group android:checkableBehavior="single"
+        >
+
+
+
+        <item
+            android:id="@+id/location"
+            android:checked="true"
+            android:color="#000"
+
+            android:icon="@drawable/home"
+            android:title="@string/Home" />
+        <item
+            android:id="@+id/profile"
+            android:checked="false"
+            android:color="#000"
+            android:icon="@drawable/user"
+            android:title="@string/complete_profile"/>
+
+        <item
+            android:id="@+id/location1"
+            android:checked="false"
+            android:color="#000"
+            android:icon="@drawable/location"
+
+            android:title="@string/add_location" />
+
+
+
+        <item
+            android:id="@+id/search"
+            android:checked="false"
+            android:color="#000"
+            android:icon="@drawable/search"
+            android:title="@string/filter1" />
+        <item
+            android:id="@+id/access"
+            android:checked="false"
+            android:color="#000"
+            android:icon="@drawable/setting"
+            android:title="@string/accessibility" />
+        <item
+            android:id="@+id/wish"
+            android:checked="false"
+            android:color="#000"
+            android:icon="@drawable/like"
+            android:title="@string/favourites" />
+
+        <item
+            android:id="@+id/share"
+            android:checked="false"
+            android:color="#000"
+            android:icon="@drawable/share"
+            android:title="@string/share" />
+
+    </group>
+</menu>
